@@ -1,0 +1,30 @@
+name: Sanat Konda
+education:
+  school: University of Florida
+  program: Combined BS/MS in Electrical and Computer Engineering
+target_areas:
+  - FPGA
+  - RTL
+  - ASIC
+  - SoC
+  - computer architecture
+  - GPU architecture
+  - embedded systems
+  - digital verification
+  - robotics and autonomy
+  - hardware acceleration
+  - hardware/software co-design
+experience:
+  - System-on-Chip Design Teaching Assistant at University of Florida
+  - Real-Time Operating Systems Teaching Assistant at University of Florida
+  - Digital Design Intern at Honeywell Aerospace
+  - Undergraduate Researcher at UF Machine Intelligence Laboratory
+  - Software Engineering Intern at UF Information Technology
+  - Telemetry Team Lead at Florida Rocket Lab / Space System Design Club
+  - Software Team Lead for IEEE Robotics Hardware Team
+github_repositories:
+  - https://github.com/sskonda/Hexapod-Robot
+  - https://github.com/sskonda/FPGA-Accelerated-Autonomous-Rover
+  - https://github.com/sskonda/Submarine-Swarm
+  - https://github.com/sskonda/NAND-Based-Logic-Mapping-and-Cost-Minimization-Engine
+  - https://github.com/sskonda/Pipelined-Dual-Edge-MIPS-Processor

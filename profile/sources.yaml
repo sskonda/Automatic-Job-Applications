@@ -1,0 +1,18 @@
+# Add public ATS board identifiers only after reviewing the source and its terms.
+greenhouse: []
+# Example:
+# greenhouse:
+#   - company: Example Corp
+#     board_token: examplecorp
+
+lever: []
+# Example:
+# lever:
+#   - company: Example Corp
+#     company_slug: examplecorp
+
+ashby: []
+# Example:
+# ashby:
+#   - company: Example Corp
+#     board_name: ExampleCorp
