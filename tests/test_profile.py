@@ -5,7 +5,11 @@ import yaml
 from app.config import Settings
 from app.materials import build_materials_prompt, generate_materials
 from app.models import JobApplication
-from app.profile import load_candidate_profile, select_relevant_projects
+from app.profile import (
+    build_candidate_context,
+    load_candidate_profile,
+    select_relevant_projects,
+)
 
 
 def make_job() -> JobApplication:
@@ -106,3 +110,22 @@ def test_fallback_cover_letter_uses_relevant_project(tmp_path: Path) -> None:
         Settings(profile_path=path, openai_api_key=""),
     )
     assert "FPGA Rover" in (materials.cover_letter or "")
+
+
+def test_candidate_context_includes_role_and_service_context() -> None:
+    profile = {
+        "application_facts": {
+            "identity": {"name": "Sanat Konda"},
+            "target_roles": ["FPGA Engineer"],
+            "community_service": [
+                {"role": "Food Sorter", "organization": "Food Bank"}
+            ],
+        },
+        "review_required_claims": [{"issue": "Do not expose this"}],
+    }
+
+    context = build_candidate_context(profile, [])
+
+    assert "FPGA Engineer" in context
+    assert "Food Sorter" in context
+    assert "Do not expose this" not in context

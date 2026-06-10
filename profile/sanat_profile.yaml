@@ -1,11 +1,12 @@
-profile_version: 2026-06-09
+profile_version: 2026-06-10
 
 # Only application_facts are passed to material generation. Conflicting or
 # weakly supported claims stay in review_required_claims.
 application_facts:
   identity:
     name: Sanat Konda
-    location: Tampa, Florida
+    location: Gainesville, Florida
+    home_location: Tampa, Florida
     linkedin: https://www.linkedin.com/in/sanat-konda/
     github: https://github.com/sskonda
     public_headline: ECE at UF | Firmware at Ford Motor Co. | TA for System-on-Chip Design
@@ -20,10 +21,15 @@ application_facts:
   education:
     - degree: Master of Science in Electrical and Computer Engineering
       school: University of Florida
+      dates: January 2026 - May 2027
       expected_graduation: May 2027
-    - degree: Bachelor of Science in Electrical and Computer Engineering
+    - degree: Bachelor of Science in Electrical Engineering
       school: University of Florida
+      dates: August 2022 - May 2026
       graduation: May 2026
+    - degree: Associate of Arts
+      school: Santa Fe College
+      dates: August 2022 - December 2023
     - coursework:
         - System-on-Chip Design
         - Reconfigurable Computing I and II
@@ -76,12 +82,14 @@ application_facts:
       - ARM assembly
       - FreeRTOS
       - Zephyr
+      - G8RTOS
       - ROS and ROS 2
       - SLAM
       - sensor fusion
       - inverse kinematics
       - motor control
       - real-time telemetry
+      - OpenCV
     tools:
       - Vivado
       - Vitis
@@ -93,6 +101,11 @@ application_facts:
       - LTspice
       - MATLAB and Simulink
       - Git and GitHub
+      - ModelSim and Questa
+      - AWS IoT Core
+      - AWS Greengrass
+      - Ubuntu
+      - Debian
     interfaces_and_platforms:
       - Zynq-7000
       - Zynq UltraScale+ MPSoC
@@ -112,16 +125,16 @@ application_facts:
       - Ethernet and multi-gigabit SERDES
 
   experience:
-    - title: Firmware Engineering Intern
+    - title: Firmware Engineer Intern
       organization: Ford Motor Company
       location: Sunrise, Florida
-      dates: May 2026 - August 2026
+      dates: May 2026 - present
       facts:
         - Developed register-level ADC and SoC peripheral drivers.
         - Refactored firmware APIs and hardware initialization flows.
         - Improved RTOS scheduling, thread safety, and resource ownership.
         - Automated Bash and shell-based firmware integration workflows.
-      evidence: 2026 CV and public LinkedIn headline
+      evidence: 2026 CV and authenticated LinkedIn experience
     - title: System-on-Chip Design Teaching Assistant
       organization: University of Florida
       dates: January 2026 - May 2026
@@ -204,17 +217,32 @@ application_facts:
         - telemetry and health monitoring
         - sensor, power, and communication integration
 
+  community_service:
+    - role: Food Sorter
+      organization: Feeding Tampa Bay Food Bank
+      evidence: Authenticated LinkedIn volunteering section
+    - role: Clothing Sorter
+      organization: Metropolitan Ministries
+      cause: Social Services
+      evidence: Authenticated LinkedIn volunteering section
+    - role: Learning Garden Maintenance
+      organization: Florida State Fairgrounds
+      cause: Environment
+      evidence: Authenticated LinkedIn volunteering section
+
   projects:
     - name: FPGA-Accelerated Autonomous Rover
       url: https://github.com/sskonda/FPGA-Accelerated-Autonomous-Rover
-      ownership: Two-person University of Florida senior design team
+      demo_url: https://www.youtube.com/watch?v=AW79Fe3PDQU
+      ownership: Two-person senior design team; Sanat owned SoC partitioning, FPGA logic, embedded software, digital architecture, and system integration
       status: Active integrated prototype; full autonomous docking remains future work
       summary: Zynq-7000 robotics platform partitioning deterministic video and motor functions into FPGA fabric while ARM software runs FreeRTOS control and telemetry.
       verified_claims:
         - PCam 5C MIPI camera and HDMI video pipeline with AXI VDMA and triple-buffered 1920x1080 RGB frames.
         - Custom four-channel AXI4-Lite motor-control IP with independent PWM, direction, enable, and braking.
         - FreeRTOS tasks for vision, sonar, motor control, telemetry, logging, sensors, and audio.
-        - BNO055, INA260, MAXSONAR, audio codec, PCB, and wireless-charging subsystem integration.
+        - BNO055, INA260, MAXSONAR, audio codec, custom sensor/peripheral PCB, and QSPI boot integration.
+        - Integrated with teammate Ryan Robinson's wireless-charging station, battery, and power-path subsystem.
       keywords:
         - FPGA
         - Zynq-7000
@@ -224,7 +252,7 @@ application_facts:
         - embedded vision
         - custom IP
         - hardware/software co-design
-      evidence: GitHub README
+      evidence: GitHub README, authenticated LinkedIn project, and featured project post
     - name: Pipelined Dual-Edge MIPS Processor
       url: https://github.com/sskonda/Pipelined-Dual-Edge-MIPS-Processor
       ownership: Personal architecture and RTL project
@@ -247,13 +275,15 @@ application_facts:
       evidence: GitHub README
     - name: Hexapod Robot
       url: https://github.com/sskonda/Hexapod-Robot
-      ownership: Personal robotics project
+      demo_url: https://www.youtube.com/watch?v=LKhaMv6I9VE
+      ownership: Three-person robotics team; Sanat developed locomotion, calibration, mapping, navigation, and multi-robot coordination software
       status: Active ROS 2 hardware and mapping stack
       summary: ROS 2 workspace for an 18-DOF search-and-rescue-inspired hexapod with gait control, lidar mapping, IMU telemetry, and autonomous exploration.
       verified_claims:
         - Integrates RPLIDAR A1, SLAM Toolbox, BNO055 UART telemetry, dual PCA9685 servo controllers, and gait odometry.
         - Includes servo calibration, scripted motion tests, frontier exploration, and obstacle-boundary recovery.
         - Uses inverse kinematics and body-level motion commands for 18 servo outputs.
+        - Coordinates with a companion robotic arm through a shared ROS node and custom communication protocol.
       keywords:
         - ROS 2
         - robotics
@@ -262,7 +292,7 @@ application_facts:
         - lidar
         - embedded systems
         - Python
-      evidence: GitHub README and 2026 CV
+      evidence: GitHub README, 2026 CV, authenticated LinkedIn project, and featured project post
     - name: NAND-Based Logic Mapping and Cost Minimization Engine
       url: https://github.com/sskonda/NAND-Based-Logic-Mapping-and-Cost-Minimization-Engine
       ownership: Personal C++ project
@@ -296,13 +326,14 @@ application_facts:
       evidence: GitHub README
     - name: Operation Duloc / Submarine Swarm
       url: https://github.com/sskonda/Submarine-Swarm
-      ownership: University of Florida hackathon team project
+      ownership: University of Florida hackathon team project led by Sanat
       status: Working hackathon demonstration
       summary: Multi-UUV coordination and edge-to-cloud autonomy system spanning custom RTOS firmware, ROS 2, embedded communications, and AWS services.
       verified_claims:
         - Team won the Vanderbilt Mission Autonomy Hackathon.
         - Uses G8RTOS, TM4C123, ESP32 BLE/UART links, ROS 2, MQTT, and AWS IoT infrastructure.
         - Implements role rotation, plan/event exchange, telemetry frames, and cloud snapshots.
+        - Integrates AWS Greengrass, IoT Core, DynamoDB, and a web mission-control dashboard.
       keywords:
         - RTOS
         - ROS 2
@@ -311,7 +342,7 @@ application_facts:
         - UART
         - BLE
         - telemetry
-      evidence: GitHub README and UF RoboPi people page
+      evidence: GitHub README, UF RoboPi people page, and authenticated LinkedIn project
     - name: CANSAT Telemetry and Flight Software
       url: https://github.com/sskonda/CANSAT-Telemetry-System
       ownership: Team project led as telemetry team lead
@@ -327,7 +358,7 @@ application_facts:
         - Python
         - C++
         - real-time systems
-      evidence: GitHub README and 2026 CV
+      evidence: GitHub README, 2026 CV, and authenticated LinkedIn project
     - name: IEEE Mining Mayhem Robot
       url: https://github.com/sskonda/IEEE-Hardware-Team-2024-2025
       ownership: University of Florida team project
@@ -345,15 +376,19 @@ application_facts:
       evidence: GitHub README
     - name: FPGA FIR Filter
       ownership: Personal project described in CV
-      status: CV-documented; repository not identified
+      status: CV and LinkedIn documented; repository not identified
       summary: Pipelined fixed-point FIR filter using FPGA DSP blocks with simulation-based verification.
+      verified_claims:
+        - Mapped multiply-accumulate operations onto FPGA DSP blocks.
+        - Tuned pipeline depth and bit widths for timing and numerical stability.
+        - Validated latency and throughput with simulation and streamed hardware inputs.
       keywords:
         - FPGA
         - DSP
         - FIR
         - fixed point
         - RTL
-      evidence: 2026 CV
+      evidence: 2026 CV and authenticated LinkedIn project
     - name: SpeedyBee F405 Firmware Extension
       ownership: Personal project described in CV
       status: CV-documented; repository not identified
@@ -365,6 +400,65 @@ application_facts:
         - telemetry
         - flight control
       evidence: 2026 CV
+    - name: Handheld Wireless Pong Game
+      ownership: Personal embedded systems project
+      status: Authenticated LinkedIn documented; repository not identified
+      summary: Bare-metal Pong implementation for two Raspberry Pi Pico 2W boards with wireless multiplayer synchronization and disconnect recovery.
+      verified_claims:
+        - Implemented the game loop, controls, and display pipeline in embedded firmware.
+        - Designed pairing, bidirectional game-state synchronization, and disconnect recovery.
+      keywords:
+        - Raspberry Pi Pico 2W
+        - embedded firmware
+        - wireless networking
+        - real-time synchronization
+        - C
+        - C++
+      evidence: Authenticated LinkedIn project
+    - name: Real-Time IoT Weather Station
+      ownership: Personal embedded systems project
+      status: Authenticated LinkedIn documented; repository not identified
+      summary: BeagleBone Black and TM4C123 weather dashboard using NOAA data, UART, and a custom RTOS.
+      verified_claims:
+        - Retrieved NOAA weather data on a BeagleBone Black and forwarded it over UART.
+        - Processed and displayed live weather data on a Tiva C microcontroller using a custom RTOS.
+        - Implemented software in C, C++, and ARM assembly.
+      keywords:
+        - RTOS
+        - TM4C123
+        - BeagleBone Black
+        - UART
+        - C
+        - C++
+        - ARM assembly
+      evidence: Authenticated LinkedIn project
+    - name: Autonomous NERF Turret
+      ownership: IAM3D team project; Sanat led electrical and embedded systems work
+      status: Demonstrated hardware prototype
+      summary: Two-axis autonomous turret combining embedded motor control, ESP32 wireless operation, camera vision, and a LiPo power subsystem.
+      verified_claims:
+        - Implemented OpenCV-based people tracking using an ESP32-CAM.
+        - Closed the loop for pan/tilt aiming and flywheel launching.
+        - Added a separate ESP32 manual-control mode and designed the power distribution subsystem.
+      keywords:
+        - ESP32
+        - OpenCV
+        - motor control
+        - embedded systems
+        - wireless control
+        - power electronics
+      evidence: Authenticated LinkedIn project and experience
+    - name: Custom Drone Platform
+      ownership: IAM3D team project; Sanat led embedded systems and electrical integration
+      status: Flight-tested prototype
+      summary: Drone platform with power management, SBUS radio control, and flight telemetry integration.
+      keywords:
+        - drone
+        - embedded firmware
+        - SBUS
+        - telemetry
+        - power management
+      evidence: Authenticated LinkedIn project and experience
     - name: Raspberry Pi Pico 2W Game Boy Emulator
       ownership: Personal project described in CV
       status: CV-documented; repository not identified
@@ -382,53 +476,104 @@ review_required_claims:
     details:
       - The June 7 general resume reports 3.57.
       - The June 7 CV reports 3.83.
+      - Authenticated LinkedIn does not display a GPA.
     action: Do not submit a GPA until Sanat confirms the correct value and whether it is undergraduate, graduate, or cumulative.
+  - issue: Current-location conflict
+    details:
+      - The resume uses Tampa, Florida.
+      - Authenticated LinkedIn uses Gainesville, Florida.
+    action: The profile treats Gainesville as the current location and Tampa as the home location; confirm which should appear on applications.
+  - issue: Ford title and end-date variants
+    details:
+      - The CV describes a May-August 2026 embedded software or firmware internship.
+      - Authenticated LinkedIn lists Firmware Engineer, Internship, May 2026 to present.
+    action: Use Firmware Engineer Intern and May 2026 to present during the internship; confirm the final title and end date after completion.
   - issue: System-on-Chip TA date conflict
     details:
       - The general resume says January 2026 to present.
-      - The CV says January 2026 to May 2026.
+      - The CV and authenticated LinkedIn say January 2026 to May 2026.
     action: Use January-May 2026 unless Sanat confirms the role continues.
+  - issue: Honeywell end-date conflict
+    details:
+      - The resume and CV say May-August 2025.
+      - Authenticated LinkedIn says May-November 2025.
+    action: Keep May-August 2025 in automatic materials until Sanat confirms whether the role continued through November.
+  - issue: Machine Intelligence Laboratory date and platform conflicts
+    details:
+      - The resume/CV say January 2023 to August 2025 and refer to an NVIDIA Jetson Nano.
+      - Authenticated LinkedIn says January 2024 to November 2025 and refers to an NVIDIA Jetson Orin.
+    action: Do not change dates or Jetson model automatically until Sanat confirms the correct history.
+  - issue: UF Information Technology title and date conflict
+    details:
+      - The resume/CV describe a Software Engineering Intern role from January-August 2023.
+      - Authenticated LinkedIn lists Cybersecurity Engineering Intern from January 2023 to January 2025.
+    action: Keep the resume/CV version in automatic materials until the title and dates are reconciled.
+  - issue: Student-organization date conflicts
+    details:
+      - Resume/CV and LinkedIn report different start and end months for the Space Systems Design Club, IEEE, and IAM3D leadership roles.
+    action: Use role names and responsibilities freely, but confirm exact dates before copying them into a formal work-history field.
   - issue: IEEE robotics platform conflict
     details:
-      - The resume/CV describes a Zynq-7000 ROS 2 pipeline with 3x latency and 25 Hz map-update metrics.
-      - The public repository documents a Raspberry Pi 4, Pi Camera 2, AprilTags, and ultrasonic sensors.
-    action: Use the public repository description; do not use the Zynq or performance metrics without clarification.
+      - The resume/CV and LinkedIn experience describe a Zynq-7000 ROS pipeline with acceleration metrics.
+      - The public IEEE repository documents a Raspberry Pi 4, Pi Camera 2, AprilTags, and ultrasonic sensors.
+    action: Use the public repository description; do not use the Zynq implementation or performance metrics without clarification.
+  - issue: LinkedIn-only advanced-computing claims lack portfolio evidence
+    details:
+      - The About section describes a 256-bit Zynq RSA engine with a 20x speedup.
+      - It also describes an RTOS Vision SoC and a custom ARM Cortex-M4 UAV micro-kernel.
+      - No matching public repository, resume entry, or detailed LinkedIn project was identified.
+    action: Keep these projects out of generated materials until artifacts or additional documentation are supplied.
   - issue: Quantitative metrics need confirmation before automatic use
     details:
-      - Honeywell 95 percent transmission success
+      - Honeywell 95 percent transmission success and 30 percent build-cycle reduction
       - UF IT 50 percent fault-isolation reduction
       - CANSAT 40 percent latency reduction and 100 percent packet integrity
-      - IEEE robotics 3x latency and 25 Hz mapping claims
-    action: Keep out of generated materials unless explicitly approved.
+      - IEEE robotics 3x latency, 20 percent power, and 25 Hz mapping claims
+      - Rover QSPI current below 1 amp and RSA 20x acceleration
+    action: Keep all uncorroborated metrics out of generated materials unless explicitly approved.
+  - issue: LinkedIn wording contains technical credibility risks
+    details:
+      - The UF IT description calls PAM4 optics encrypted, although PAM4 is a modulation format rather than encryption.
+      - The MIL description calls Spartan-7 a SoC, although Spartan-7 is an FPGA family.
+      - The Honeywell description refers to real-time trading applications, which is not corroborated by the aerospace internship materials.
+      - The Ford description currently reads only "Wrote code or something."
+    action: Never use these phrases automatically; revise the LinkedIn entries before relying on them externally.
 
 evidence_sources:
   resume:
     description: 2026_General_Sanat_Konda_Resume.pdf
     local_path_env: RESUME_PATH
-    reviewed: 2026-06-09
+    reviewed: 2026-06-10
   cv:
     description: 2026_CV_Sanat_Konda.pdf
     local_path_env: CV_PATH
-    reviewed: 2026-06-09
+    reviewed: 2026-06-10
   github:
     profile: https://github.com/sskonda
     repositories_reviewed: 14
-    reviewed: 2026-06-09
+    reviewed: 2026-06-10
   linkedin:
     profile: https://www.linkedin.com/in/sanat-konda/
-    access: Full profile blocked by LinkedIn sign-in wall; public search snippets reviewed.
-    public_signals:
-      - ECE at UF
-      - Firmware at Ford Motor Company
-      - System-on-Chip Design TA
-      - Previous Digital Design role at Honeywell Aerospace
-      - RoboPi researcher
-      - Reconfigurable computing focus
-    reviewed: 2026-06-09
+    access: Authenticated profile review completed in the user's signed-in browser.
+    sections_reviewed:
+      - top card and About
+      - Featured
+      - Experience
+      - Education
+      - Projects
+      - Skills
+      - Volunteering
+    inventory:
+      experiences: 11
+      educations: 4
+      projects: 10
+      skills: 40
+      volunteer_experiences: 3
+    reviewed: 2026-06-10
   uf_robopi:
     url: https://robopi.ece.ufl.edu/people.html
     verified:
       - Operation Duloc team membership
       - Vanderbilt Mission Autonomy Hackathon win
       - Multi-UUV coordination and edge-to-cloud system
-    reviewed: 2026-06-09
+    reviewed: 2026-06-10

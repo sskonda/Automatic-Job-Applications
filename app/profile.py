@@ -99,11 +99,13 @@ def build_candidate_context(
     context = {
         "identity": facts.get("identity", {}),
         "education": facts.get("education", []),
+        "target_roles": facts.get("target_roles", []),
         "core_skills": facts.get("core_skills", {}),
         "experience": facts.get("experience", []),
         "leadership_and_accomplishments": facts.get(
             "leadership_and_accomplishments", []
         ),
+        "community_service": facts.get("community_service", []),
         "most_relevant_projects": projects,
     }
     return yaml.safe_dump(context, sort_keys=False, allow_unicode=False)
