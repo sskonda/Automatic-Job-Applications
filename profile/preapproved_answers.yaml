@@ -1,12 +1,12 @@
 # Fill only answers that Sanat has explicitly approved.
 name: Sanat Konda
-email:
-phone:
-linkedin:
+email: ${APPLICANT_EMAIL}
+phone: ${APPLICANT_PHONE}
+linkedin: https://www.linkedin.com/in/sanat-konda/
 github: https://github.com/sskonda
 school: University of Florida
-degree:
-graduation date:
+degree: M.S. and B.S. in Electrical and Computer Engineering
+graduation date: May 2027
 gpa:
 work authorization:
 sponsorship:
@@ -15,4 +15,6 @@ preferred locations:
 salary expectations:
 clearance:
 portfolio links:
-resume path:
+  - https://github.com/sskonda
+  - https://www.linkedin.com/in/sanat-konda/
+resume path: ${RESUME_PATH}

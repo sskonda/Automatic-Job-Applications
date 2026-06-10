@@ -63,15 +63,21 @@ inside this repository.
 ## Configuration
 
 1. Fill only explicitly approved values in `profile/preapproved_answers.yaml`.
-2. Add reviewed public ATS boards to `profile/sources.yaml`.
-3. Set `OPENAI_API_KEY` to enable model-generated materials.
-4. Keep `AUTO_SUBMIT_ENABLED=false` during review and dry runs.
-5. Add explicitly approved company hostnames to `ALLOWED_COMPANY_DOMAINS`.
-6. Never put secrets or OAuth tokens in tracked files.
+2. Review `profile/sanat_profile.yaml`, especially `review_required_claims`.
+3. Set `RESUME_PATH` and `CV_PATH` to the private local documents; do not commit them.
+4. Add reviewed public ATS boards to `profile/sources.yaml`.
+5. Set `OPENAI_API_KEY` to enable model-generated materials.
+6. Keep `AUTO_SUBMIT_ENABLED=false` during review and dry runs.
+7. Add explicitly approved company hostnames to `ALLOWED_COMPANY_DOMAINS`.
+8. Never put secrets or OAuth tokens in tracked files.
 
 Source names `greenhouse`, `lever`, and `ashby` are platform-allowlisted, but live
 submission still requires a supported adapter, no CAPTCHA/login blocker, complete
 approved answers, and a score above the threshold.
+
+Material generation reads only the `application_facts` section of the candidate profile.
+Conflicting GPA, date, platform, and performance claims remain under
+`review_required_claims` and are excluded from prompts until explicitly resolved.
 
 ## Gmail API
 

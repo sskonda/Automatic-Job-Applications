@@ -1,30 +1,434 @@
-name: Sanat Konda
-education:
-  school: University of Florida
-  program: Combined BS/MS in Electrical and Computer Engineering
-target_areas:
-  - FPGA
-  - RTL
-  - ASIC
-  - SoC
-  - computer architecture
-  - GPU architecture
-  - embedded systems
-  - digital verification
-  - robotics and autonomy
-  - hardware acceleration
-  - hardware/software co-design
-experience:
-  - System-on-Chip Design Teaching Assistant at University of Florida
-  - Real-Time Operating Systems Teaching Assistant at University of Florida
-  - Digital Design Intern at Honeywell Aerospace
-  - Undergraduate Researcher at UF Machine Intelligence Laboratory
-  - Software Engineering Intern at UF Information Technology
-  - Telemetry Team Lead at Florida Rocket Lab / Space System Design Club
-  - Software Team Lead for IEEE Robotics Hardware Team
-github_repositories:
-  - https://github.com/sskonda/Hexapod-Robot
-  - https://github.com/sskonda/FPGA-Accelerated-Autonomous-Rover
-  - https://github.com/sskonda/Submarine-Swarm
-  - https://github.com/sskonda/NAND-Based-Logic-Mapping-and-Cost-Minimization-Engine
-  - https://github.com/sskonda/Pipelined-Dual-Edge-MIPS-Processor
+profile_version: 2026-06-09
+
+# Only application_facts are passed to material generation. Conflicting or
+# weakly supported claims stay in review_required_claims.
+application_facts:
+  identity:
+    name: Sanat Konda
+    location: Tampa, Florida
+    linkedin: https://www.linkedin.com/in/sanat-konda/
+    github: https://github.com/sskonda
+    public_headline: ECE at UF | Firmware at Ford Motor Co. | TA for System-on-Chip Design
+    professional_focus:
+      - FPGA and SoC engineering
+      - RTL design and digital verification
+      - computer and GPU architecture
+      - embedded firmware and RTOS
+      - robotics and autonomous systems
+      - hardware/software co-design
+
+  education:
+    - degree: Master of Science in Electrical and Computer Engineering
+      school: University of Florida
+      expected_graduation: May 2027
+    - degree: Bachelor of Science in Electrical and Computer Engineering
+      school: University of Florida
+      graduation: May 2026
+    - coursework:
+        - System-on-Chip Design
+        - Reconfigurable Computing I and II
+        - Digital Design
+        - Computer Architecture
+        - Digital Logic and Computer Systems
+        - Microprocessors I and II
+        - Linear Controls
+        - Autonomous Robots
+        - RF Circuits
+        - Signals and Systems
+
+  target_roles:
+    - FPGA Engineer
+    - RTL Design Engineer
+    - Digital Design Engineer
+    - ASIC Design Engineer
+    - Design Verification Engineer
+    - SoC Design or Verification Engineer
+    - Computer or GPU Architecture Engineer
+    - Hardware Acceleration Engineer
+    - Embedded Firmware Engineer
+    - Robotics Embedded Systems Engineer
+
+  core_skills:
+    hdl_and_architecture:
+      - VHDL
+      - Verilog
+      - SystemVerilog
+      - Chisel
+      - SystemC/TLM
+      - RTL design
+      - pipelined processor design
+      - AXI and AXI4-Lite
+      - DMA and memory-mapped peripherals
+      - hardware/software co-design
+    verification:
+      - UVM
+      - self-checking testbenches
+      - ModelSim and Questa
+      - GHDL
+      - iverilog
+      - waveform debugging
+      - timing analysis
+      - hardware validation
+    embedded_and_robotics:
+      - C
+      - C++
+      - Python
+      - ARM assembly
+      - FreeRTOS
+      - Zephyr
+      - ROS and ROS 2
+      - SLAM
+      - sensor fusion
+      - inverse kinematics
+      - motor control
+      - real-time telemetry
+    tools:
+      - Vivado
+      - Vitis
+      - TCL scripting
+      - CMake
+      - Code Composer Studio
+      - Altium Designer
+      - HyperLynx
+      - LTspice
+      - MATLAB and Simulink
+      - Git and GitHub
+    interfaces_and_platforms:
+      - Zynq-7000
+      - Zynq UltraScale+ MPSoC
+      - Spartan-7
+      - Artix-7
+      - Cyclone 10
+      - ARM Cortex-M
+      - STM32
+      - ESP32
+      - Raspberry Pi and Raspberry Pi Pico
+      - CAN
+      - SPI
+      - I2C
+      - UART
+      - LoRa
+      - XBee
+      - Ethernet and multi-gigabit SERDES
+
+  experience:
+    - title: Firmware Engineering Intern
+      organization: Ford Motor Company
+      location: Sunrise, Florida
+      dates: May 2026 - August 2026
+      facts:
+        - Developed register-level ADC and SoC peripheral drivers.
+        - Refactored firmware APIs and hardware initialization flows.
+        - Improved RTOS scheduling, thread safety, and resource ownership.
+        - Automated Bash and shell-based firmware integration workflows.
+      evidence: 2026 CV and public LinkedIn headline
+    - title: System-on-Chip Design Teaching Assistant
+      organization: University of Florida
+      dates: January 2026 - May 2026
+      facts:
+        - Taught processor-peripheral communication, memory hierarchy, interconnects, parallelism, and performance tradeoffs.
+        - Guided RTL IP, AXI peripheral, Vivado, Vitis, and hardware/software SoC workflows.
+        - Mentored SystemC/TLM modeling and UVM/SCV verification.
+      evidence: 2026 resume and CV
+    - title: Undergraduate Student Researcher
+      organization: RoboPi Laboratory, University of Florida
+      dates: August 2025 - present
+      facts:
+        - Develops embedded robotics prototypes with sensors, actuators, motor drivers, and real-time controls.
+        - Uses C, C++, and Python for firmware, state estimation, and inter-device communication.
+        - Developed a self-balancing mechanism for aquatic locomotion.
+      evidence: 2026 resume/CV and UF RoboPi people page
+    - title: Real-Time Operating Systems Teaching Assistant
+      organization: University of Florida
+      dates: May 2025 - December 2025
+      facts:
+        - Authored C-based labs covering scheduling, synchronization, DMA, and real-time execution on the TI TM4C123G.
+        - Mentored approximately 80 students in ARM Cortex-M debugging and hardware bring-up.
+      evidence: 2026 resume and CV
+    - title: Digital Design Intern
+      organization: Honeywell Aerospace
+      dates: May 2025 - August 2025
+      facts:
+        - Designed 10/25 GbE FPGA networking data paths using Zynq UltraScale+ MPSoC, AXI interconnects, DMA, and multi-gigabit SERDES.
+        - Developed custom RTL/IP and SystemVerilog/UVM validation for high-speed data paths.
+        - Designed and validated a four-layer high-speed PCB with controlled impedance and differential pairs.
+      evidence: 2026 resume and CV
+    - title: Undergraduate Student Researcher
+      organization: Machine Intelligence Laboratory, University of Florida
+      dates: January 2023 - August 2025
+      facts:
+        - Designed a USB-to-CAN PCB for an autonomous submarine.
+        - Developed LoRa-enabled control and safety boards with FreeRTOS.
+        - Integrated CAN, SPI, and LoRa telemetry using embedded C/C++ and Python.
+        - Built ROS, ArduPilot, and Gazebo simulation workflows.
+      evidence: 2026 resume and CV
+    - title: Software Engineering Intern
+      organization: University of Florida Information Technology
+      dates: January 2023 - August 2023
+      facts:
+        - Worked on network-hardware security, optical transceiver telemetry, and Python diagnostics.
+        - Logged BER, eye-diagram, and link-integrity measurements for hardware troubleshooting.
+      evidence: 2026 resume and CV
+
+  leadership_and_accomplishments:
+    - accomplishment: Winner, Vanderbilt Mission Autonomy Hackathon
+      context: Operation Duloc multi-UUV coordination and edge-to-cloud system
+      evidence: https://robopi.ece.ufl.edu/people.html
+    - role: Telemetry Team Lead
+      organization: Space System Design Club, University of Florida
+      dates: August 2023 - August 2025
+      focus:
+        - Pi Pico RTOS telemetry firmware
+        - sensor integration and synchronized telemetry
+        - ground-station data delivery
+    - role: Software Team Lead
+      organization: IEEE Robotics Hardware Team, University of Florida
+      dates: August 2023 - August 2025
+      focus:
+        - autonomous robotics
+        - vision and localization
+        - embedded software integration
+    - role: Electrical Design Lead
+      organization: IAM3D Robotics Team, University of Florida
+      dates: August 2023 - August 2025
+      focus:
+        - embedded controls
+        - RF communication
+        - camera streaming
+        - power distribution
+    - role: Avionics Engineer
+      organization: Florida Rocket Lab, University of Florida
+      dates: August 2023 - May 2024
+      focus:
+        - onboard computers
+        - telemetry and health monitoring
+        - sensor, power, and communication integration
+
+  projects:
+    - name: FPGA-Accelerated Autonomous Rover
+      url: https://github.com/sskonda/FPGA-Accelerated-Autonomous-Rover
+      ownership: Two-person University of Florida senior design team
+      status: Active integrated prototype; full autonomous docking remains future work
+      summary: Zynq-7000 robotics platform partitioning deterministic video and motor functions into FPGA fabric while ARM software runs FreeRTOS control and telemetry.
+      verified_claims:
+        - PCam 5C MIPI camera and HDMI video pipeline with AXI VDMA and triple-buffered 1920x1080 RGB frames.
+        - Custom four-channel AXI4-Lite motor-control IP with independent PWM, direction, enable, and braking.
+        - FreeRTOS tasks for vision, sonar, motor control, telemetry, logging, sensors, and audio.
+        - BNO055, INA260, MAXSONAR, audio codec, PCB, and wireless-charging subsystem integration.
+      keywords:
+        - FPGA
+        - Zynq-7000
+        - AXI4-Lite
+        - AXI VDMA
+        - FreeRTOS
+        - embedded vision
+        - custom IP
+        - hardware/software co-design
+      evidence: GitHub README
+    - name: Pipelined Dual-Edge MIPS Processor
+      url: https://github.com/sskonda/Pipelined-Dual-Edge-MIPS-Processor
+      ownership: Personal architecture and RTL project
+      status: Implemented and simulation-verified
+      summary: Fully functional 32-bit MIPS CPU implemented as multi-cycle and five-stage pipelined architectures in both VHDL and SystemVerilog.
+      verified_claims:
+        - Implements forwarding, load-use and multiply hazards, branch/jump flushing, HI/LO registers, and memory-mapped I/O.
+        - Supports 23 ALU operations and a broad R-, I-, and J-type instruction subset.
+        - Self-checking GHDL and iverilog simulations report 11 and 12 passing checks.
+        - Targets an Intel/Altera MAX 10 FPGA.
+      keywords:
+        - computer architecture
+        - RTL
+        - VHDL
+        - SystemVerilog
+        - pipeline
+        - forwarding
+        - hazard detection
+        - verification
+      evidence: GitHub README
+    - name: Hexapod Robot
+      url: https://github.com/sskonda/Hexapod-Robot
+      ownership: Personal robotics project
+      status: Active ROS 2 hardware and mapping stack
+      summary: ROS 2 workspace for an 18-DOF search-and-rescue-inspired hexapod with gait control, lidar mapping, IMU telemetry, and autonomous exploration.
+      verified_claims:
+        - Integrates RPLIDAR A1, SLAM Toolbox, BNO055 UART telemetry, dual PCA9685 servo controllers, and gait odometry.
+        - Includes servo calibration, scripted motion tests, frontier exploration, and obstacle-boundary recovery.
+        - Uses inverse kinematics and body-level motion commands for 18 servo outputs.
+      keywords:
+        - ROS 2
+        - robotics
+        - SLAM
+        - inverse kinematics
+        - lidar
+        - embedded systems
+        - Python
+      evidence: GitHub README and 2026 CV
+    - name: NAND-Based Logic Mapping and Cost Minimization Engine
+      url: https://github.com/sskonda/NAND-Based-Logic-Mapping-and-Cost-Minimization-Engine
+      ownership: Personal C++ project
+      status: Implemented
+      summary: C++17 technology-mapping tool that parses Boolean netlists, creates NAND-NOT trees, and computes minimum cell-library implementation cost.
+      verified_claims:
+        - Uses memoized structural pattern matching across NOT, NAND2, AND2, NOR2, OR2, AOI21, and AOI22 cells.
+        - Validates malformed input, duplicate definitions, undefined signals, multiple outputs, and cycles.
+      keywords:
+        - logic synthesis
+        - technology mapping
+        - algorithms
+        - C++
+        - digital design
+      evidence: GitHub README
+    - name: Verilog HDL Toolkit
+      url: https://github.com/sskonda/Verilog-Toychest
+      ownership: Personal HDL toolkit and teaching reference
+      status: Implemented and expanding
+      summary: Parameterized reusable Verilog components with ModelSim automation and self-checking verification.
+      verified_claims:
+        - Includes randomized scoreboard-based FIFO testing and exhaustive adder and multiplexer tests.
+        - Includes reusable TCL compile and waveform scripts.
+      keywords:
+        - Verilog
+        - RTL
+        - testbench
+        - verification
+        - ModelSim
+        - TCL
+      evidence: GitHub README
+    - name: Operation Duloc / Submarine Swarm
+      url: https://github.com/sskonda/Submarine-Swarm
+      ownership: University of Florida hackathon team project
+      status: Working hackathon demonstration
+      summary: Multi-UUV coordination and edge-to-cloud autonomy system spanning custom RTOS firmware, ROS 2, embedded communications, and AWS services.
+      verified_claims:
+        - Team won the Vanderbilt Mission Autonomy Hackathon.
+        - Uses G8RTOS, TM4C123, ESP32 BLE/UART links, ROS 2, MQTT, and AWS IoT infrastructure.
+        - Implements role rotation, plan/event exchange, telemetry frames, and cloud snapshots.
+      keywords:
+        - RTOS
+        - ROS 2
+        - distributed robotics
+        - AWS IoT
+        - UART
+        - BLE
+        - telemetry
+      evidence: GitHub README and UF RoboPi people page
+    - name: CANSAT Telemetry and Flight Software
+      url: https://github.com/sskonda/CANSAT-Telemetry-System
+      ownership: Team project led as telemetry team lead
+      status: Subsystem and ground-station implementations
+      summary: Raspberry Pi Pico sensor, actuator, telemetry, and ground-station software for a competition payload.
+      verified_claims:
+        - Collects GPS, altitude, temperature, battery, IMU, and magnetic-field telemetry at a required 1 Hz rate.
+        - Includes motor and auto-gyro support plus a Python telemetry GUI using Pandas, PySimpleGUI, and Matplotlib.
+      keywords:
+        - embedded telemetry
+        - Raspberry Pi Pico
+        - sensors
+        - Python
+        - C++
+        - real-time systems
+      evidence: GitHub README and 2026 CV
+    - name: IEEE Mining Mayhem Robot
+      url: https://github.com/sskonda/IEEE-Hardware-Team-2024-2025
+      ownership: University of Florida team project
+      status: Documented competition robot software
+      summary: Raspberry Pi 4 autonomous robot using Pi Camera 2 AprilTag localization, four-sided ultrasonic sensing, navigation, and object manipulation.
+      verified_claims:
+        - Uses Python, OpenCV, AprilTags, Raspberry Pi GPIO, camera localization, and obstacle sensing.
+      keywords:
+        - robotics
+        - Raspberry Pi
+        - computer vision
+        - AprilTag
+        - Python
+        - autonomous navigation
+      evidence: GitHub README
+    - name: FPGA FIR Filter
+      ownership: Personal project described in CV
+      status: CV-documented; repository not identified
+      summary: Pipelined fixed-point FIR filter using FPGA DSP blocks with simulation-based verification.
+      keywords:
+        - FPGA
+        - DSP
+        - FIR
+        - fixed point
+        - RTL
+      evidence: 2026 CV
+    - name: SpeedyBee F405 Firmware Extension
+      ownership: Personal project described in CV
+      status: CV-documented; repository not identified
+      summary: Reverse-engineered flight-controller interfaces and added custom embedded networking and telemetry behavior.
+      keywords:
+        - firmware
+        - STM32
+        - networking
+        - telemetry
+        - flight control
+      evidence: 2026 CV
+    - name: Raspberry Pi Pico 2W Game Boy Emulator
+      ownership: Personal project described in CV
+      status: CV-documented; repository not identified
+      summary: Embedded handheld emulator with serial ROM upload, custom Wi-Fi multiplayer protocol, PCB, and power-supply design.
+      keywords:
+        - embedded systems
+        - emulator
+        - Raspberry Pi Pico
+        - PCB
+        - Wi-Fi
+      evidence: 2026 CV
+
+review_required_claims:
+  - issue: GPA conflict
+    details:
+      - The June 7 general resume reports 3.57.
+      - The June 7 CV reports 3.83.
+    action: Do not submit a GPA until Sanat confirms the correct value and whether it is undergraduate, graduate, or cumulative.
+  - issue: System-on-Chip TA date conflict
+    details:
+      - The general resume says January 2026 to present.
+      - The CV says January 2026 to May 2026.
+    action: Use January-May 2026 unless Sanat confirms the role continues.
+  - issue: IEEE robotics platform conflict
+    details:
+      - The resume/CV describes a Zynq-7000 ROS 2 pipeline with 3x latency and 25 Hz map-update metrics.
+      - The public repository documents a Raspberry Pi 4, Pi Camera 2, AprilTags, and ultrasonic sensors.
+    action: Use the public repository description; do not use the Zynq or performance metrics without clarification.
+  - issue: Quantitative metrics need confirmation before automatic use
+    details:
+      - Honeywell 95 percent transmission success
+      - UF IT 50 percent fault-isolation reduction
+      - CANSAT 40 percent latency reduction and 100 percent packet integrity
+      - IEEE robotics 3x latency and 25 Hz mapping claims
+    action: Keep out of generated materials unless explicitly approved.
+
+evidence_sources:
+  resume:
+    description: 2026_General_Sanat_Konda_Resume.pdf
+    local_path_env: RESUME_PATH
+    reviewed: 2026-06-09
+  cv:
+    description: 2026_CV_Sanat_Konda.pdf
+    local_path_env: CV_PATH
+    reviewed: 2026-06-09
+  github:
+    profile: https://github.com/sskonda
+    repositories_reviewed: 14
+    reviewed: 2026-06-09
+  linkedin:
+    profile: https://www.linkedin.com/in/sanat-konda/
+    access: Full profile blocked by LinkedIn sign-in wall; public search snippets reviewed.
+    public_signals:
+      - ECE at UF
+      - Firmware at Ford Motor Company
+      - System-on-Chip Design TA
+      - Previous Digital Design role at Honeywell Aerospace
+      - RoboPi researcher
+      - Reconfigurable computing focus
+    reviewed: 2026-06-09
+  uf_robopi:
+    url: https://robopi.ece.ufl.edu/people.html
+    verified:
+      - Operation Duloc team membership
+      - Vanderbilt Mission Autonomy Hackathon win
+      - Multi-UUV coordination and edge-to-cloud system
+    reviewed: 2026-06-09

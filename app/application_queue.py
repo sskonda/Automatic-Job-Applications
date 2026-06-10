@@ -2,7 +2,9 @@ from __future__ import annotations
 
 from collections.abc import Iterable
 from datetime import date
+import os
 from pathlib import Path
+import re
 from typing import Any
 
 import yaml
@@ -22,7 +24,19 @@ from app.storage import JobStore
 
 def load_preapproved_answers(path: str | Path) -> dict[str, Any]:
     data = yaml.safe_load(Path(path).read_text(encoding="utf-8")) or {}
-    return {str(key).strip().lower(): value for key, value in data.items()}
+
+    def expand(value: Any) -> Any:
+        if isinstance(value, str):
+            match = re.fullmatch(r"\$\{([A-Z0-9_]+)\}", value.strip())
+            return os.getenv(match.group(1), "") if match else value
+        if isinstance(value, list):
+            return [expand(item) for item in value]
+        return value
+
+    return {
+        str(key).strip().lower(): expand(value)
+        for key, value in data.items()
+    }
 
 
 def write_daily_report(
